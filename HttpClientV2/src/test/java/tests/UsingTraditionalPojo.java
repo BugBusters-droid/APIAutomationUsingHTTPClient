@@ -45,7 +45,7 @@ public class UsingTraditionalPojo extends TestBase {
         //converting pojo(java object) to json - Marshalling
         ObjectMapper mapper = new ObjectMapper();
         TraditionalUsersPojo users = new TraditionalUsersPojo("Tina", "Singer");
-        mapper.writeValue(new File("/Users/venkatesh.u/TpsMock/HttpClientV2/src/test/java/files/Users.json"), users);
+        mapper.writeValue(new File("Users/Venkatesh/HttpClientV2/src/test/java/files/Users.json"), users);
 
         //object to json in string for payload request
         String usersJsonString = mapper.writeValueAsString(users);
